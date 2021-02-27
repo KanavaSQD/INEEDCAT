@@ -28,13 +28,17 @@
 
 
 <script>
+function getRandomInt(max) 
+{
+  return Math.floor(Math.random() * Math.floor(max));
+}
 function showMeThatPussy()
 {
 let num = document.querySelector('#numberOfPussy').value;
 for (let i = 0; i < num; i++)
 {
 let img = document.createElement('img');
-img.src = 'https://thiscatdoesnotexist.com/?dummy=' + i + new Date().getTime() + Math.random();
+img.src = "cat/" + getRandomInt(1000) + ".jpg";
 document.querySelector('body').appendChild(img);
 };
 };
