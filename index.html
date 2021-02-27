@@ -1,3 +1,15 @@
+<!— Create by Alex Nemtin, qEleftheria, Xndraftica—>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>НУЖНО БОЛЬШЕ КОТИКОВ</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!— Create by qEleftheria —>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -10,16 +22,19 @@
 
 <body style="text-align: center; font-family: Helvetica;">
 <h1>КОТЫ!!!</h1>
-<input type="text" id="numberOfDicks">
-<button onclick="showMeThatDick()">Показать кот(ы)</button>
-<br>
+<input type="text" id="numberOfPussy">
+<button onclick="showMeThatPussy()">Показать кот(ы)</button>
+
+
 
 <script>
-function showMeThatDick() {
-let num = document.querySelector('#numberOfDicks').value;
-for (let i = 0; i < num; i++) {
+function showMeThatPussy()
+{
+let num = document.querySelector('#numberOfPussy').value;
+for (let i = 0; i < num; i++)
+{
 let img = document.createElement('img');
-img.src = 'https://thiscatdoesnotexist.com/';
+img.src = 'https://thiscatdoesnotexist.com/?dummy=' + i + new Date().getTime() + Math.random();
 document.querySelector('body').appendChild(img);
 };
 };
